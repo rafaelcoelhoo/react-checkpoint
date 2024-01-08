@@ -1,0 +1,33 @@
+.products {
+    margin: 15px 30px;
+}
+
+.products ul {
+    height: 100%;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+    position: relative;
+    align-items: stretch;
+    padding: 0;
+
+    @media only screen and (min-width: 720px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media only screen and (min-width: 968px) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    @media only screen and (min-width: 1200px) {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    @media only screen and (min-width: 1500px) {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+
+

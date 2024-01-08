@@ -1,0 +1,54 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #A72A24;
+  padding: 15px 30px;
+  color: white;
+}
+
+.header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+  @media only screen and (min-width: 720px) {
+    gap: 40px;
+
+  }
+}
+
+.header button {
+  align-items: center;
+  display: flex;
+  gap: 5px;
+  background-color: inherit;
+  color: white;
+  font-size: 1.5rem;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  @media only screen and (min-width: 720px) {
+    font-size: 2rem;
+    gap: 10px;
+  }
+}
+
+
+.header .totalBadge {
+  position: absolute;
+  right: -0.2rem;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  font-weight: bold;
+  background-color: white;
+  color: #A72A24;
+  border-radius: 50%;
+  width: 1.2rem;
+  height: 1.2rem;
+  padding: 1.5px;
+}
